@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp" >
+
+        <Button
+            android:id="@+id/btn_audio_playstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_playstate_play"
+            android:onClick="BtnOnClick" />
+    </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="audio" />
-
-    <Button
-        android:id="@+id/button_audio_playstate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="BtnOnClick"
-        android:text="播放" />
 
     <Button
         android:id="@+id/btn_switch_video"
@@ -23,4 +32,11 @@
         android:onClick="BtnOnClick"
         android:text="@string/audio_switch_to_video" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btn_edit_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="BtnOnClick"
+        android:text="@string/edit_list" />
+
+</RelativeLayout>

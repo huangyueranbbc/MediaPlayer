@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
@@ -16,10 +18,10 @@ import com.example.mediaplayer.view.AudioFragment;
 import com.example.mediaplayer.view.VideoFragment;
 
 public class DisplayActivity extends Activity implements SurfaceHolder.Callback {
+	private static final String Tag = "DisplayActivity";
 
 	private int displayType = Constants.DISPLAY_TYPE_VIDEO; // 当前播放多媒体文件的类型
 															// 音频/视频
-
 	private View mvAudio, mvVideo;
 	private SurfaceView mSurfaceView;
 
@@ -162,5 +164,17 @@ public class DisplayActivity extends Activity implements SurfaceHolder.Callback 
 	public void surfaceDestroyed(SurfaceHolder holder) {
 		// TODO Auto-generated method stub
 
+	}
+
+	/**
+	 * 处理列表编辑 并返回结果
+	 */
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		if (displayType == Constants.DISPLAY_TYPE_AUDIO) {
+			Log.i(Tag, "result for audio");
+		} else if (displayType == Constants.DISPLAY_TYPE_VIDEO) {
+			Log.i(Tag, "result for video");
+		}
+		super.onActivityResult(requestCode, resultCode, data);
 	}
 }

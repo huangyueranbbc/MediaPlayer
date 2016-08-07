@@ -1,5 +1,5 @@
 package com.example.mediaplayer.view;
 
 public interface IUpdateDisplayState {
-	public void updateDisplayState();
+	public void updateDisplayState(int displayState);
 }
