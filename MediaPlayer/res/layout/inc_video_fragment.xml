@@ -3,10 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-	<TextView 
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:text="video"/>
-    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="video" />
+
+    <Button
+        android:id="@+id/button_video_playstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="BtnOnClick"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn_switch_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="BtnOnClick"
+        android:text="@string/video_switch_to_audio" />
+
 </LinearLayout>
