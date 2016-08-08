@@ -20,6 +20,19 @@
             android:onClick="BtnOnClick" />
     </RelativeLayout>
 
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/control_panel"
+        android:layout_marginBottom="32.0dip"
+        android:layout_marginLeft="32.0dip"
+        android:layout_marginRight="32.0dip"
+        android:maxHeight="5.0dip"
+        android:minHeight="5.0dip"
+        android:progressDrawable="@layout/seekbar_style_sample"
+        android:thumb="@layout/thumb_sample" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

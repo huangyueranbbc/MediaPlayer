@@ -32,20 +32,22 @@ public final class R {
         public static final int btn_playstate_play_normal=0x7f020004;
         public static final int btn_playstate_play_press=0x7f020005;
         public static final int ic_launcher=0x7f020006;
-        public static final int welcome=0x7f020007;
+        public static final int thumb=0x7f020007;
+        public static final int welcome=0x7f020008;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000c;
+        public static final int action_settings=0x7f09000d;
         public static final int audio_fragment=0x7f090002;
         public static final int btn_audio_playstate=0x7f090006;
-        public static final int btn_edit_display=0x7f090008;
-        public static final int btn_switch_audio=0x7f09000b;
-        public static final int btn_switch_video=0x7f090007;
-        public static final int button_video_playstate=0x7f09000a;
+        public static final int btn_edit_display=0x7f090009;
+        public static final int btn_switch_audio=0x7f09000c;
+        public static final int btn_switch_video=0x7f090008;
+        public static final int button_video_playstate=0x7f09000b;
         public static final int control_panel=0x7f090005;
         public static final int edit_list=0x7f090003;
         public static final int iv_welcome=0x7f090004;
-        public static final int name=0x7f090009;
+        public static final int name=0x7f09000a;
+        public static final int seekBar=0x7f090007;
         public static final int surfaceView=0x7f090000;
         public static final int video_fragment=0x7f090001;
     }
@@ -56,6 +58,9 @@ public final class R {
         public static final int inc_audio_fragment=0x7f030003;
         public static final int inc_edit_item_list=0x7f030004;
         public static final int inc_video_fragment=0x7f030005;
+        public static final int seekbar_style=0x7f030006;
+        public static final int seekbar_style_sample=0x7f030007;
+        public static final int thumb_sample=0x7f030008;
     }
     public static final class menu {
         public static final int dispaly=0x7f080000;

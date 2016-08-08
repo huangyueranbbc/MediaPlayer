@@ -38,6 +38,7 @@ public class AudioFragment extends Fragment implements IUpdateDisplayState {
 
 	private void initScreenView() {
 		btnPlayState = (Button) root.findViewById(R.id.btn_audio_playstate);
+		
 	}
 
 	public void BtnOnClick(View view) {
